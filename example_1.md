@@ -6,7 +6,7 @@ Text.
 
 ## Script
 
-Beginn:
+Begin:
 
 <html>
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js">
@@ -14,9 +14,12 @@ Beginn:
 Here is one mermaid diagram:
 <div class="mermaid">
 graph TD 
-A[Client] --> B[Load Balancer] 
-B --> C[Server1] 
-B --> D[Server2]
+A[Job 1] --> B[Job 2] 
+B --> C[Job 3] 
+B --> D[Job 4]
+D --> E[Job 5]
+C --> E
+C --Circular Dependency --> B
 </div>
 </html>
 
